@@ -5,7 +5,7 @@
 
 # def reverse_letters(sentence_string)
 #     array = sentence_string.split(" ")
-#     new_array = array.map do |word| O(n)
+#     new_array = array.map do |word| #O(n)
 #         word.reverse O(n)    O(n^2)
 #     end
 #     new_array.join(" ")   
