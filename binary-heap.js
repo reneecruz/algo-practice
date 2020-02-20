@@ -34,3 +34,11 @@ class maxBinaryHeap {
 // keep looping as long as the values element at the parentIndex is less than the values element at the child index
 // swap the value of the values element at the parentIndex with the value of the element property at the child index
 // set the index to be the parentIndex, and start over
+
+// Big O of Binary Heaps: 
+// Insertion: 0(log n)
+// Removal: 0(log n)
+// Search: 0(n)
+
+// Use when trying to get max or min from group of data, i.e. stocks
+// Use for Priority Queue Node Class
