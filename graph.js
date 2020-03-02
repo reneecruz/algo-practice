@@ -65,6 +65,24 @@ const visited = {
     2: true, ​
 }
 
+// const visited = {
+//   0: true,
+//   4: true,
+//   3: true,
+//   2: true,
+//   1: true,
+//   6: true,
+// }
+// list.removeVertex(0)
+// list.removeEdge(0, 4)
+// list.addVertex(0)
+// list.addVertex(1)
+// list.addVertex(2)
+// list.addVertex(3)
+// list.addVertex(4)
+// list.addVertex(5)
+// list.addVertex(6)
+
 ​
 const g = new Graph();
 g.adjacencyList = graph;
