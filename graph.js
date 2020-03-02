@@ -22,9 +22,9 @@ class Graph {
           this.removeEdge(vtx, v);
         })
         delete this.adjacencyList[vtx]
-      }
+    }
 
-      DFS(vtx) {
+    DFS(vtx) {
         const stack = [vtx];
         const visited = {};
         const result = [];
@@ -38,6 +38,16 @@ class Graph {
           });
         }
         return result;
-      }
-    ​
+    }
 }
+
+
+const graph = {
+    0: [4, 5, 6], //6
+    1: [2, 6],
+    2: [1, 3, 6],
+    3: [2, 4, 6],
+    4: [3, 5],
+    5: [0, 4],
+    6: [0, 1, 2, 3],
+  }
