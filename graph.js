@@ -50,4 +50,22 @@ const graph = {
     4: [3, 5],
     5: [0, 4],
     6: [0, 1, 2, 3],
-  }
+}
+
+
+
+
+const visited = {
+    0: true,
+    4: true,
+    5: true,
+    6: true,
+    3: true,
+    1: true,
+    2: true, ​
+}
+
+​
+const g = new Graph();
+g.adjacencyList = graph;
+console.log(g.DFS(0));
