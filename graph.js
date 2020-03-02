@@ -23,5 +23,21 @@ class Graph {
         })
         delete this.adjacencyList[vtx]
       }
-    
+
+      DFS(vtx) {
+        const stack = [vtx];
+        const visited = {};
+        const result = [];
+        while (stack.length) {
+          const currentNode = stack.pop();
+          if (visited[currentNode]) continue;
+          visited[currentNode] = true;
+          result.push(currentNode);
+          this.adjacencyList[currentNode].forEach(n => {
+            stack.push(n);
+          });
+        }
+        return result;
+      }
+    ​
 }
