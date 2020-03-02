@@ -16,4 +16,12 @@ class Graph {
         this.adjacencyList[v1] = this.adjacencyList[v1].filter(v => v !== v2)
         this.adjacencyList[v2] = this.adjacencyList[v2].filter(v => v !== v1) 
     }
+
+    removeVertex(vtx) {
+        this.adjacencyList[vtx].forEach(v => {
+          this.removeEdge(vtx, v);
+        })
+        delete this.adjacencyList[vtx]
+      }
+    
 }
