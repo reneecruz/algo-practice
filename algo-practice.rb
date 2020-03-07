@@ -27,5 +27,5 @@ end
 
 
 
-p reverse_letters("Rene is cool") # "looc si eneR"
+p reverse_letters("Renée is cool") # "looc si eéneR"
 p reverse_letters("Brian is not cool") # "looc not si nairB"
